@@ -1,0 +1,5 @@
+directory: ~/somedir
+library: ~/musiclibrary.db
+plugins: discogs info
+match:
+    strong_rec_thresh: 1

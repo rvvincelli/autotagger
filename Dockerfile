@@ -18,8 +18,8 @@ COPY beetsplug/ /autotagger/beetsplug/
 RUN export PYTHONPATH=${PYTHONPATH}:/autotagger/beets:/autotagger/beetsplug
 
 RUN mkdir -p /root/.config/beets
-RUN echo "***THE FOLLOWING COMMAND EXPECTS THREE FILE CREATED WHEN FIRST RUNNING beets"
-RUN echo "TO CREATE THEM DOWNLOAD AND RUN beets LOCALLY - http://beets.io/"
+RUN echo "***THE FOLLOWING COMMAND EXPECTS THREE FILE CREATED WHEN FIRST RUNNING beet WITH THE DISCOGS PLUGIN; THEY ARE FOUND UNDER ~/.config/beets"
+RUN echo "TO CREATE THEM JUST RUN THE PLUGIN https://beets.readthedocs.io/en/v1.3.17/plugins/discogs.html"
 COPY config.yaml discogs_token.json state.pickle /root/.config/beets/
 
 ENV SOURCEDIR=/source
