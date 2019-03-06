@@ -12,7 +12,7 @@ This started as a bunch of scripts badly combined, eventually everything landed 
 
 Before you start download Beets itself and try out the Discogs plugin: this will create the needed `discogs_token.json` (and a pickle which I reference as well even if it does not matter). Well this is basically getting the API token after registering the app (you need a Dogs account for this but it is free).
 
-# Build and Run
+## Build and Run
 
 Build with:
 `docker build -t autotagger .`
@@ -33,7 +33,7 @@ after running the above you will have:
 
 Please notice that if no information is found on Discogs the track will stay uncategorized and end up in the destination dir as an actual file.
 
-# Why all of this
+## Why all of this
 
 A few reasons:
 
